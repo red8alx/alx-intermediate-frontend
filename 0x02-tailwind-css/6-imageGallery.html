@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Grid Layout with Image Gallery</title>
+    <!-- Link to your generated Tailwind CSS file -->
+    <link href="./src/output.css" rel="stylesheet">
+</head>
+<body>
+    <header class="p-4 bg-gray-800 text-white text-center rounded-b-lg">
+        <h1 class="text-3xl font-bold">Complex Grid Layout with Nested Grids</h1>
+    </header>
+
+    <main class="grid grid-cols-2 gap-4 p-4 max-w-7xl mx-auto my-8 bg-gray-100 rounded-lg shadow-lg">
+        <!-- Existing layout from previous task -->
+        <div class="grid grid-cols-2 p-4 gap-2 bg-blue-200 rounded-lg shadow-md">
+            <div class="bg-blue-400 p-2 text-white font-semibold rounded-md flex items-center justify-center">Nested 1</div>
+            <div class="bg-blue-500 p-2 text-white font-semibold rounded-md flex items-center justify-center">Nested 2</div>
+        </div>
+        <div class="grid grid-cols-2 p-4 gap-2 bg-red-200 rounded-lg shadow-md">
+            <div class="bg-red-400 p-2 text-white font-semibold rounded-md flex items-center justify-center">Nested 3</div>
+            <div class="bg-red-500 p-2 text-white font-semibold rounded-md flex items-center justify-center">Nested 4</div>
+        </div>
+        <div class="bg-green-200 p-4 text-white font-semibold rounded-lg shadow-md flex items-center justify-center">Content 3</div>
+        <div class="bg-yellow-200 p-4 text-white font-semibold rounded-lg shadow-md flex items-center justify-center">Content 4</div>
+    </main>
+
+    <section class="image-gallery p-4 max-w-7xl mx-auto my-8 bg-gray-100 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-center mb-6 text-gray-800">Responsive Image Gallery</h2>
+
+        <!-- Image Gallery Grid -->
+        <div class="grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/FF5733/FFFFFF?text=Image+1" alt="Gallery Image 1" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/33FF57/FFFFFF?text=Image+2" alt="Gallery Image 2" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/3357FF/FFFFFF?text=Image+3" alt="Gallery Image 3" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/FF33A1/FFFFFF?text=Image+4" alt="Gallery Image 4" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/A133FF/FFFFFF?text=Image+5" alt="Gallery Image 5" class="w-full h-auto object-cover">
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-md">
+                <img src="https://placehold.co/600x400/FFEB33/FFFFFF?text=Image+6" alt="Gallery Image 6" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
