@@ -1,0 +1,5 @@
+# .gitignore
+node_modules/
+.env
+dist/ # or build/ if you don't want to track compiled output
+# ... any other files/folders you want to ignore
